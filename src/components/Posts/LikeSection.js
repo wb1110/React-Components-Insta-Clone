@@ -5,8 +5,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faComment, faHeart } from '@fortawesome/free-regular-svg-icons';
-import App from '../../App';
-import Posts from './Posts';
 
 const LikeSection = props => {
   // 🔥 Make sure the parent of LikeSection is passing the right props!
