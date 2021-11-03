@@ -1,5 +1,6 @@
 import React from 'react';
 import Post from './Post';
+import App from '../../App';
 import './Posts.css';
 
 const Posts = (props) => {
@@ -8,6 +9,7 @@ const Posts = (props) => {
 
   return (
     <div className='posts-container-wrapper'>
+      {posts.map((post) => <Post likePost={likePost} post={post}/>)}
       {/* Map through the posts array returning a Post component at each iteration */}
       {/* Check the implementation of Post to see what props it requires! */}
     </div>
